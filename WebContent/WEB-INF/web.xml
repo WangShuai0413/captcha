@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>captcha</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 以上省略 -->
+  <!-- 将ImageServlet配置到web.xml文件中 -->
+  <servlet>
+  	<servlet-name>ImageServlet</servlet-name>
+  	<servlet-class>com.wshuai.ImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ImageServlet</servlet-name>
+  	<url-pattern>/servlet/ImageServlet</url-pattern>
+  </servlet-mapping>
+  <!-- 以下省略 -->
+  <!-- 以上省略 -->
+  <!-- 将ImageServlet配置到web.xml文件中 -->
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.wshuai.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <!-- 以下省略 -->
+  
+</web-app>
